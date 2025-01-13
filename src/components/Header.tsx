@@ -1,7 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
-import { Heart } from 'lucide-react';
 
 export function Header() {
   return (

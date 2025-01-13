@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import {
@@ -37,7 +36,7 @@ const featuredCampaigns = [
     id: 3,
     title: 'Ajude A Elsa com os Estudos',
     description: 'Apoie A Elsa com o financiamento da Viagem de Estudos',
-    category: 'animais',
+    category: 'educacao',
     current: 37500,
     goal: 50000,
     image: '/src/assets/bolsa de estudos mulher.jpg',
