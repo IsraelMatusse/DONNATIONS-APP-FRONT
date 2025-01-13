@@ -20,7 +20,7 @@ export function CampaignDetails() {
     goal: 50000,
     current: 35000,
     daysLeft: 15,
-    image: '/src/assets/8lpyx3tilxl33526xqz2efvri0hrks.jpeg',
+    image: '/assets/8lpyx3tilxl33526xqz2efvri0hrks.jpeg',
     updates: [
       { date: '2024-01-10', content: 'Conseguimos comprar 500kg de ração!' },
       { date: '2024-01-05', content: 'Iniciamos as reformas no canil' },
