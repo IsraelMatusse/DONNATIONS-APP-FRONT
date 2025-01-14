@@ -16,7 +16,7 @@ const featuredCampaigns = [
     id: 1,
     title: 'Ajude Vitimas de Cheias',
     description: 'Ajude as pessoas que sofrem de desastres naturais',
-    image: '/assets/desastres naturais.jpg',
+    image: '/desastresnaturais.jpg',
     category: 'social',
     current: 37500,
     goal: 50000,
@@ -29,7 +29,7 @@ const featuredCampaigns = [
     category: 'saúde',
     current: 45000,
     goal: 100000,
-    image: '/assets/crianca deficiente.jpg',
+    image: '/criancadeficiente.jpg',
     progress: 45,
   },
   {
@@ -39,7 +39,7 @@ const featuredCampaigns = [
     category: 'educacao',
     current: 37500,
     goal: 50000,
-    image: '/assets/bolsa de estudos mulher.jpg',
+    image: '/bolsadeestudosmulher.jpg',
     progress: 60,
   },
 ];

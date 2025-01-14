@@ -15,14 +15,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 
 const paymentMethods = {
   mobileWallet: [
-    { id: 'mpesa', name: 'M-Pesa', icon: '/src/assets/mpesa.png' },
-    { id: 'emola', name: 'e-Mola', icon: '/src/assets/emola.png' },
-    { id: 'mkesh', name: 'mKesh', icon: '/src/assets/mkesh.png' },
+    { id: 'mpesa', name: 'M-Pesa', icon: '/mpesa.png' },
+    { id: 'emola', name: 'e-Mola', icon: '/emola.png' },
+    { id: 'mkesh', name: 'mKesh', icon: '/mkesh.png' },
   ],
   card: [
-    { id: 'visa', name: 'Visa', icon: '/src/assets/visa.png' },
-    { id: 'mastercard', name: 'Mastercard', icon: '/src/assets/mastercard.png' },
-    { id: 'paypal', name: 'PayPal', icon: '/src/assets/paypal.png' },
+    { id: 'visa', name: 'Visa', icon: '/visa.png' },
+    { id: 'mastercard', name: 'Mastercard', icon: '/mastercard.png' },
+    { id: 'paypal', name: 'PayPal', icon: '/paypal.png' },
   ],
 };
 
@@ -45,7 +45,6 @@ export function DonationPopup({ isOpen, onClose, campaignTitle }: DonationPopupP
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would handle the donation process
     console.log('Donation submitted:', {
       amount,
       paymentType,

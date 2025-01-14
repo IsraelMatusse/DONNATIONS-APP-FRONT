@@ -20,7 +20,7 @@ export function CampaignDetails() {
     goal: 50000,
     current: 35000,
     daysLeft: 15,
-    image: '/assets/8lpyx3tilxl33526xqz2efvri0hrks.jpeg',
+    image: '/8lpyx3tilxl33526xqz2efvri0hrks.jpeg',
     updates: [
       { date: '2024-01-10', content: 'Conseguimos comprar 500kg de ração!' },
       { date: '2024-01-05', content: 'Iniciamos as reformas no canil' },
@@ -39,7 +39,6 @@ export function CampaignDetails() {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Coluna Principal */}
           <div className="lg:col-span-8">
             <img
               src={campaign.image}
@@ -101,7 +100,6 @@ export function CampaignDetails() {
             </Tabs>
           </div>
 
-          {/* Barra Lateral */}
           <div className="lg:col-span-4">
             <Card className="sticky top-4">
               <CardContent className="pt-6">

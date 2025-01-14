@@ -20,9 +20,7 @@ export function CreateInstitution() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você adicionaria a lógica para enviar os dados para o backend
     console.log({ nome, descricao, website });
-    // Resetar o formulário ou redirecionar o usuário
   };
 
   return (

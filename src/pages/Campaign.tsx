@@ -18,7 +18,7 @@ const allCampaigns = [
     id: 1,
     title: 'Equipamentos para Hospital',
     description: 'Doe para equipamentos médicos essenciais',
-    image: '/assets/3ffc2566-c5de-485a-bdd1-8badccde5aa6.jpeg',
+    image: '/3ffc2566-c5de-485a-bdd1-8badccde5aa6.jpeg',
     category: 'saude',
     current: 120000,
     goal: 200000,
@@ -28,7 +28,7 @@ const allCampaigns = [
     id: 2,
     title: 'Reforma da Escola Comunitária',
     description: 'Ajude a renovar nossa escola local',
-    image: '/assets/8lpyx3tilxl33526xqz2efvri0hrks.jpeg',
+    image: '/8lpyx3tilxl33526xqz2efvri0hrks.jpeg',
     category: 'educacao',
     current: 45000,
     goal: 100000,
@@ -38,7 +38,7 @@ const allCampaigns = [
     id: 3,
     title: 'Ajude o Abrigo de Animais',
     description: 'Apoie nosso abrigo local de animais',
-    image: '/assets/pexels-photo-26128.jpg',
+    image: '/pexels-photo-26128.jpg',
     category: 'animais',
     current: 37500,
     goal: 50000,
@@ -48,7 +48,7 @@ const allCampaigns = [
     id: 4,
     title: 'Ajude Vitimas de Cheias',
     description: 'Ajude as pessoas que sofrem de desastres naturais',
-    image: '/assets/desastres naturais.jpg',
+    image: '/desastresnaturais.jpg',
     category: 'desastre',
     current: 37500,
     goal: 50000,
@@ -61,7 +61,7 @@ const allCampaigns = [
     category: 'saude',
     current: 45000,
     goal: 100000,
-    image: '/assets/crianca deficiente.jpg',
+    image: '/criancadeficiente.jpg',
     progress: 45,
   },
   {
@@ -71,7 +71,7 @@ const allCampaigns = [
     category: 'educacao',
     current: 37500,
     goal: 50000,
-    image: '/assets/bolsa de estudos mulher.jpg',
+    image: '/bolsadeestudosmulher.jpg',
     progress: 60,
   },
 ];
@@ -88,19 +88,12 @@ export function Cmapaigns() {
     <div className="flex flex-col min-h-screen w-full bg-gradient-to-b from-purple-100 to-pink-50">
       <Header />
 
-      {/* Main content wrapper - takes remaining height */}
       <div className="flex-1 w-full">
-        {/* Fixed width container for content alignment */}
         <div className="min-h-full w-full max-w-[1920px] mx-auto px-6">
-          {/* Content grid with fixed minimum height */}
           <div className="grid grid-rows-[auto_1fr_auto] min-h-[calc(100vh-64px)]">
             {' '}
-            {/* 64px is header height */}
-            {/* Header section */}
             <div className="py-6">
               <h1 className="text-2xl font-semibold text-purple-800 mb-6">Campanhas</h1>
-
-              {/* Filters section with fixed height */}
               <div className="h-[50px] flex items-center">
                 <div className="flex items-center gap-2">
                   <span className="text-sm text-gray-600">Filtrar por:</span>
@@ -122,7 +115,6 @@ export function Cmapaigns() {
                 </div>
               </div>
             </div>
-            {/* Campaigns grid section - fills available space */}
             <div className="min-h-0 py-6">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 auto-rows-fr">
                 {filteredCampaigns.map(campaign => (
@@ -132,7 +124,6 @@ export function Cmapaigns() {
                   >
                     <div className="relative pt-[56.25%]">
                       {' '}
-                      {/* 16:9 aspect ratio */}
                       <img
                         src={campaign.image}
                         alt={campaign.title}
@@ -162,7 +153,6 @@ export function Cmapaigns() {
                 ))}
               </div>
             </div>
-            {/* Pagination section - fixed height */}
             <div className="py-6">
               <div className="flex justify-center items-center gap-4">
                 <Button variant="outline" className="text-sm" disabled={currentPage === 1}>
