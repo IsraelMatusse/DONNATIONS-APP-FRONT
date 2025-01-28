@@ -5,6 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React from 'react';
 import { Cmapaigns } from './pages/Campaign';
 import { CampaignDetails } from './pages/CampaignDetails';
+import { CreateInstitution } from './pages/CreateInstitution';
+import { InstitutionsList } from './pages/Institutions';
+import { CreateCampaign } from './pages/CreateCampaign';
+import { Login } from './pages/Login';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +22,22 @@ const router = createBrowserRouter([
   {
     path: '/campanha/:id',
     element: <CampaignDetails />,
+  },
+  {
+    path: '/criar-campanha',
+    element: <CreateCampaign />,
+  },
+  {
+    path: '/instituicoes',
+    element: <InstitutionsList />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
+  {
+    path: '/criar-instituicoes',
+    element: <CreateInstitution />,
   },
 ]);
 

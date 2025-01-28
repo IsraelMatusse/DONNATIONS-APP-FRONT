@@ -144,7 +144,7 @@ export default function Home() {
             </p>
             <div className="flex justify-center space-x-4">
               <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
-                <Link to="/criar-instituicao">Criar Instituição</Link>
+                <Link to="/criar-instituicoes">Criar Instituição</Link>
               </Button>
               <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
                 <Link to="/criar-campanha">Criar Campanha</Link>
